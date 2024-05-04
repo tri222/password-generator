@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#center">Home</a></li>
+          
+          <li><a href="#center2">Password Generator</a></li>
+          
+        </ul>
+      </nav>
+    <div id="center">
+
+        
+        <div class="div1">
+            <h1 >Need a Unique, Secure Password?</h1>
+        </div>
+
+        <div class="div2">
+
+            <img src="https://www.lastpass.com/-/media/4cf440af0909454db3e6c67c4eff966c.svg?la=en&hash=9E8AF8D89D5C1090E396564158BCA429">
+        </div> 
+        
+    </div>
+
+    <div id="center2">
+        <div id="container">
+            <h2 class="title">Password Generator</h2>
+            <div class="result">
+                <div class="result__title field-title">Generated Password</div>
+                
+                <div class="result__info left">copied</div>
+                <div class="result__viewbox" id="result">CLICK GENERATE</div>
+                <button id="copy-btn" ><i class="far fa-copy"></i></button>
+            </div>
+            <div class="length range__slider" data-min="4" data-max="32">
+                <div class="length__title field-title" data-length='0'>Choose length between 4 to 32 :</div>
+                <input id="slider" type="range" min="4" max="32" value="16" />
+            </div>
+        
+            <div class="settings">
+                <span class="settings__title field-title">settings</span>
+                <div class="setting">
+                    <input type="checkbox" id="uppercase" checked />
+                    <label for="uppercase">Include Uppercase</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="lowercase" checked />
+                    <label for="lowercase">Include Lowercase</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="number" checked />
+                    <label for="number">Include Numbers</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="symbol" />
+                    <label for="symbol">Include Symbols</label>
+                </div>
+            </div>
+        
+            <button class="btn generate" id="generate">Generate Password</button>
+        </div>
+    </div>
+    
+       
+    
+    
+    
+    
+    
+    
+</body>
+<script src="assets/script.js"></script>
+</html>
